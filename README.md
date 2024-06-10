@@ -21,8 +21,8 @@ The main objective of this project is to develop a machine learning model that c
 
 ## Results
 
-As a baseline, I used the Dummy Classifier (most frequent), which achieved 54% accuracy. This result will serve as the threshold that we should surpass. 
-After training the SVM model, we achieved 78% accuracy, which is much better than the baseline. Additionally, we can examine the results of incorrect predictions and see that the majority of errors are made on children.
+As a baseline, I used the Dummy Classifier (most frequent), which achieved **54%** accuracy. This result will serve as the threshold that we should surpass. 
+After training the SVM model, we achieved **78%** accuracy, which is much better than the baseline. Additionally, we can examine the results of incorrect predictions and see that the majority of errors are made on children.
 
 ![Model Incorrect Predictions](Incorrect_predictions.png)
 
