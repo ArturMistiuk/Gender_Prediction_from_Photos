@@ -1,6 +1,6 @@
 # Gender Prediction using SVM Model
 
-This project aims to predict gender based on facial images using Support Vector Machine (SVM) model. The dataset used in this project is taken from the UCI repository, Burden Diseases.
+This project aims to predict gender based on facial images using Support Vector Machine (SVM) model.
 
 ## Overview
 
@@ -8,7 +8,8 @@ The main objective of this project is to develop a machine learning model that c
 
 ## Dataset
 
-The dataset used in this project is sourced from the UCI repository, Burden Diseases. It consists of a collection of facial images labeled with gender information.
+[UTKFace dataset](https://www.kaggle.com/datasets/jangedoo/utkface-new) is a large-scale face dataset with long age span (range from 0 to 116 years old). The dataset consists of over 20,000 face images with annotations of age, gender, and ethnicity. The images cover large variation in pose, facial expression, illumination, occlusion, resolution, etc. This dataset could be used on a variety of tasks, e.g., face detection, age estimation, age progression/regression, landmark localization, etc.
+
 
 ## Techniques Explored
 
@@ -20,22 +21,10 @@ The dataset used in this project is sourced from the UCI repository, Burden Dise
 
 ## Results
 
-The SVM model achieved an accuracy of 54% on the test dataset. While this accuracy is relatively low, it serves as a baseline for further improvement through experimentation with advanced algorithms and feature engineering techniques.
+As a baseline, I used the Dummy Classifier (most frequent), which achieved 54% accuracy. This result will serve as the threshold that we should surpass. 
+After training the SVM model, we achieved 78% accuracy, which is much better than the baseline. Additionally, we can examine the results of incorrect predictions and see that the majority of errors are made on children.
 
-## Project Structure
-
-- `data/`: Directory containing the dataset files.
-- `src/`: Source code directory.
-  - `preprocessing.py`: Preprocessing script for data augmentation and PCA.
-  - `svm_model.py`: Implementation of the SVM model.
-- `notebooks/`: Jupyter notebooks for exploratory data analysis and model evaluation.
-
-## Requirements
-
-- Python 3.x
-- scikit-learn
-- OpenCV
-- NumPy
+![Model Incorrect Predictions](Incorrect_predictions.png)
 
 ## Usage
 
@@ -45,14 +34,9 @@ The SVM model achieved an accuracy of 54% on the test dataset. While this accura
 4. Train the SVM model using the processed dataset.
 5. Evaluate the model's performance using test data.
 
-## References
-
-- UCI Machine Learning Repository: [Burden Diseases Dataset](https://archive.ics.uci.edu/ml/datasets/burden+of+disease)
-- scikit-learn Documentation: [Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)
-
 ## Contributors
 
-- [Your Name](link_to_your_profile) - Project Lead and Developer
+- [Artur Mistiuk](https://github.com/ArturMistiuk) - Project Lead and Developer
 
 ## License
 
